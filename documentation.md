@@ -140,3 +140,24 @@ Sum of numbers (classic): 15
 ```
 Sum of numbers (coroutine): 15
 ```
+
+### Folder patterns/
+
+##### Content:
+- fire_and_forget.py
+- pub_sub_simple.py
+- pub_sub_viable.py
+- data_pipeline.py
+
+##### Description:
+- fire_and_forget.py:
+  This code illustrates the "Fire-and-Forget" pattern, where you initiate a task (sending an email) asynchronously and then continue with other work without blocking or waiting for the task's completion.
+- pub_sub_simple.py
+  This code illustrates the "Publish Subscribe" pattern, where you have a simple message publishing and subscription system using the asyncio library.
+- pub_sub_viable.py
+  This code illustrates the "Publish Subscribe" pattern.
+  When you run this code, it demonstrates a simplified chat room where messages can be published to the room, and multiple subscribers (Alice and Bob) continuously receive and print those messages. 
+- data_pipeline.py
+  This code illustrates the "Pipeline" pattern.
+  It performs data processing tasks such as removing duplicates, calling a third-party API to retrieve coordinates based on addresses, and adding an import timestamp column.
+  It showcases how asyncio can be used to efficiently handle data processing tasks, making it suitable for scenarios involving data ingestion, cleaning, and enrichment.
