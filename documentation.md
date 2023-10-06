@@ -116,3 +116,27 @@ Fetching file completed
 Fetching file completed
 Main completed
 ```
+
+### Folder subroutine_vs_coroutine/
+
+##### Content:
+- classic_subroutine_approach.py
+- coroutine_approach.py
+
+##### Description:
+- In this classic subroutine approach, we define a function sum_numbers_classic that takes a list of numbers and iterates through them to calculate the sum.
+- In this coroutine approach, we define an asynchronous function sum_numbers_coroutine. Inside this function, we calculate the sum of numbers, but we also include await asyncio.sleep(0) to yield control to the event loop briefly. This allows other tasks to run concurrently if they exist.
+
+    The main function is an asynchronous entry point that runs the coroutine and prints the result.
+
+    When you run the coroutine approach, you'll see that it can handle asynchronous operations while calculating the sum, making it suitable for scenarios where you want to avoid blocking the event loop.
+
+##### Returns:
+- classic_subroutine_approach.py
+```
+Sum of numbers (classic): 15
+```
+- coroutine_approach.py
+```
+Sum of numbers (coroutine): 15
+```
