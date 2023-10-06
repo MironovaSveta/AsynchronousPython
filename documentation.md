@@ -65,7 +65,7 @@ Task 5: Result = 25
 Task done with result=None  << return val of main()
 ```
 
-### asyncio_best_practices.p
+### asyncio_best_practices.py
 
 ##### Description:
 - We import the asyncio module for asynchronous programming.
