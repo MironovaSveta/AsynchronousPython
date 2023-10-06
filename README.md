@@ -5,6 +5,10 @@ Welcome to the Asynchronous Python Examples Repository! This repository is a col
 ### Repository Contents
 This repository includes a variety of Python files, each showcasing different aspects of asynchronous programming. Some of the key contents are:
 
+- Documentation
+
+- Dictionary
+
 - async_main.py: This file demonstrates the basics of asynchronous Python. It defines a simple asynchronous function, main, and illustrates how to work with event loops, tasks, and callbacks.
 
 - network_request_example.py: Explore how to use asyncio to make asynchronous network requests, enabling efficient fetching of data from multiple sources concurrently.
