@@ -17,6 +17,12 @@ This repository includes a variety of Python files, each showcasing different as
 
 - asyncio_best_practices.py: Discover best practices and patterns for writing clean, efficient, and maintainable asynchronous Python code.
 
+- file_io/: This folder demonstrates synchronous (blocking) and asynchronous (non-blocking) file I/O operations.
+
+- subroutine_vs_coroutine/: This folder demonstrates classic subroutine approach and coroutine approach.
+
+- patterns/: Viable examples of asynchronous design patterns.
+
 ### Getting Started
 To get started with these examples, clone this repository to your local machine and explore each Python file. Each file is thoroughly documented with explanations, making it easy to understand and experiment with asynchronous Python concepts.
 
