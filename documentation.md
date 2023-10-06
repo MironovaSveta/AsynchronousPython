@@ -2,7 +2,7 @@
 
 ### async_main.py
 
-##### Explatantion:
+##### Description:
 - You define an asynchronous function called main, which serves as the main coroutine for your asynchronous code.
 - You attempt to get the current running event loop using asyncio.get_running_loop(). If there is no running event loop, a RuntimeError is caught and handled by setting loop to None.
 - If an event loop is already running (loop is not None and loop.is_running() returns True), you create a task from the main coroutine using loop.create_task(main()). This task represents the execution of the main coroutine on the event loop.
@@ -18,7 +18,7 @@ Task done with result=None  << return val of main()
 
 ### network_request_example.py
 
-##### Explatantion:
+##### Description:
 - We import the necessary modules: asyncio for asynchronous programming and aiohttp for making asynchronous HTTP requests.
 - We define a list of URLs (urls) from which we want to fetch data concurrently.
 - The fetch_url function is an asynchronous function that uses aiohttp to make a GET request to a URL and returns the response text if the request is successful (HTTP status code 200).
@@ -48,7 +48,7 @@ Task done with result=None  << return val of main()
 
 ### parallel_processing.py
 
-##### Explanation:
+##### Description:
 - We import the necessary modules: asyncio for asynchronous programming and concurrent.futures for parallel processing of CPU-bound tasks.
 - We define a list of tasks (tasks) that represents CPU-bound tasks we want to execute in parallel. In this example, we simply square each number in the list.
 - The cpu_bound_task function simulates a CPU-bound task. You can replace this with your actual CPU-bound task code.
@@ -67,7 +67,7 @@ Task done with result=None  << return val of main()
 
 ### asyncio_best_practices.p
 
-##### Explanation:
+##### Description:
 - We import the asyncio module for asynchronous programming.
 - The perform_io_operation function is a simple asynchronous function that simulates I/O operations. It uses await asyncio.sleep(1) to simulate a 1-second I/O delay and then prints a completion message.
 - The main function is the entry point of our program. It creates a list of tasks for concurrent execution using asyncio.create_task and appends them to the tasks list.
@@ -82,4 +82,37 @@ IO operation 5 completed
 IO operation 2 completed
 IO operation 4 completed
 Task done with result=None  << return val of main()
+```
+
+### folder file_io/
+
+##### Content:
+- sync_file_io.py
+- async_file_io.py
+
+##### Description:
+- sync_file_io.py is a Python script that demonstrates synchronous (blocking) file I/O operations. It simulates fetching a file, where each file fetch operation takes one second to complete.
+- async_file_io.py is a Python script that demonstrates asynchronous (non-blocking) file I/O operations using the asyncio library. It simulates fetching a file, with each file fetch operation taking one second to complete.
+
+##### Returns:
+- sync_file_io.py
+```
+Starting to fetch file
+Fetching file completed
+Starting to fetch file
+Fetching file completed
+Starting to fetch file
+Fetching file completed
+Main completed
+```
+- async_file_io.py
+```
+Starting main
+Starting to fetch file
+Starting to fetch file
+Starting to fetch file
+Fetching file completed
+Fetching file completed
+Fetching file completed
+Main completed
 ```
